@@ -1,0 +1,49 @@
+<svg width="320" height="80" viewBox="0 0 320 80" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient Text -->
+    <linearGradient id="textGradient" x1="0%" y1="0%" x2="100%">
+      <stop offset="0%" stop-color="#F472B6"></stop>
+      <stop offset="100%" stop-color="#A78BFA"></stop>
+    </linearGradient>
+
+    <!-- Coin Gradient -->
+    <radialGradient id="coin">
+      <stop offset="0%" stop-color="#FBBF24"></stop>
+      <stop offset="100%" stop-color="#F59E0B"></stop>
+    </radialGradient>
+  </defs>
+
+  <!-- Icon Group -->
+  <g transform="translate(10,10)">
+    
+    <!-- Hair -->
+    <path d="M10 30 Q25 5 40 30 L40 50 Q25 65 10 50 Z" fill="#8B5CF6"></path>
+    
+    <!-- Face -->
+    <circle cx="25" cy="35" r="15" fill="#FCE7F3"></circle>
+    
+    <!-- Eyes -->
+    <path d="M17 35 Q21 30 25 35" stroke="#4C1D95" stroke-width="2" fill="none" stroke-linecap="round"></path>
+    <path d="M25 35 Q29 30 33 35" stroke="#4C1D95" stroke-width="2" fill="none" stroke-linecap="round"></path>
+    
+    <!-- Smile -->
+    <path d="M20 42 Q25 47 30 42" stroke="#DB2777" stroke-width="2" fill="none" stroke-linecap="round"></path>
+    
+    <!-- Blush -->
+    <circle cx="15" cy="40" r="2.5" fill="#F472B6" opacity="0.5"></circle>
+    <circle cx="35" cy="40" r="2.5" fill="#F472B6" opacity="0.5"></circle>
+
+    <!-- Ears -->
+    <polygon points="15,20 22,8 30,20" fill="#A78BFA"></polygon>
+    <polygon points="25,20 32,8 40,20" fill="#A78BFA"></polygon>
+
+    <!-- Coin -->
+    <circle cx="42" cy="20" r="6" fill="url(#coin)"></circle>
+    <text x="42" y="23" font-size="6" text-anchor="middle" fill="#7C2D12">¥</text>
+  </g>
+
+  <!-- Text -->
+  <text x="80" y="48" font-size="32" font-family="Fredoka, sans-serif" fill="url(#textGradient)">
+    Koin-chan
+  </text>
+</svg>

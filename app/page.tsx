@@ -11,13 +11,24 @@ export default function Home() {
 
   return (
     <main className="app-root">
-      {/* Hero */}
+
+      {/* 🔥 NAVBAR (LOGO ONLY) */}
+      <div className="navbar">
+        <img src="/logo.svg" alt="Koin-chan Logo" className="logo-nav" />
+      </div>
+
+      {/* 🔥 HERO (CHARACTER ONLY) */}
       <div className="hero">
         <div className="hero-avatar">
           <KoinChan mood="excited" size={100} />
         </div>
+
         <h1 className="hero-title">Koin-chan</h1>
-        <p className="hero-sub">AI Financial Advisor — belajar keuangan jadi fun! ✨</p>
+
+        <p className="hero-sub">
+          AI Financial Advisor — belajar keuangan jadi fun! ✨
+        </p>
+
         <div className="hero-chips">
           <span className="hero-chip">🤖 Powered by Gemini AI</span>
           <span className="hero-chip">💰 Budget Analyzer</span>
@@ -25,7 +36,7 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Tabs */}
+      {/* 🔥 TABS */}
       <div className="tabs">
         <button
           className={`tab ${tab === "chat" ? "active" : ""}`}
@@ -41,10 +52,10 @@ export default function Home() {
         </button>
       </div>
 
-      {/* Content */}
+      {/* 🔥 CONTENT */}
       {tab === "chat" ? <AIChat /> : <BudgetAnalyzer />}
 
-      {/* Footer */}
+      {/* 🔥 FOOTER */}
       <div className="footer">
         Made with 💜 by Koin-chan · Powered by Google Gemini AI
       </div>
