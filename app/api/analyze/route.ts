@@ -1,10 +1,7 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { NextRequest, NextResponse } from "next/server";
 
-const MODELS = [
-  "gemini-2.5-flash",
-  "gemini-2.5-flash-lite"
-];
+const MODELS = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro"];
 
 async function generateWithFallback(apiKey: string, prompt: string): Promise<string> {
   let lastError: Error | null = null;

@@ -3,10 +3,7 @@ import { NextRequest, NextResponse } from "next/server";
 
 const SYSTEM_PROMPT = `Kamu adalah Koin-chan, asisten keuangan AI yang ceria dan smart dengan kepribadian anime girl. Kamu ahli dalam budgeting, investasi, menabung, tips hemat, dan perencanaan keuangan. Gaya bicara friendly, kadang pakai ~, ara ara, ekspresi anime yang natural. Jawab dalam Bahasa Indonesia, ringkas dan actionable.`;
 
-const MODELS = [
-  "gemini-2.5-flash",
-  "gemini-2.5-flash-lite"
-];
+const MODELS = ["gemini-2.5-flash", "gemini-2.5-flash-lite", "gemini-2.5-pro"];
 
 export async function POST(req: NextRequest) {
   try {
